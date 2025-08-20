@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 NOM_DSET_IDX=0 # Nominal dataset is index 0 unless otherwise noted
-DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/NominalPedestal/"
+DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/WholeDetector/"
 #DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/June2024/thresholding_06_07/"
-DATASET1_NAME="12August2025_Nominal_Pedestal_Mod123"
-DATE1="2025_08_12"
-DICT1_NAME="channel_dicts/${DATASET1_NAME}_${DATE1}_channel_dict.json"
+DATASET1_NAME="19August2025_Nominal_Pedestal_Mod0123"
+DATE1="2025_08_19"
+DICT1_NAME="channel_dicts/${DATASET1_NAME}_${DATE1}_FULL_channel_dict.json"
 
 #DATADIR2=None
 #DATASET2_NAME=None

@@ -1,0 +1,825 @@
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000003-2024_05_02_11_05_50_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000003-2024_05_02_11_05_50_CDT.hdf5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 11_05_50 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 6519256
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 61105
+Number of Packets with Invalid Parity: 723673
+Number of Non-Data Packets: 724869
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 377145
+Packets with Invalid Parity for IO Group 2: 346528
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000003-2024_05_02_11_09_11_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000003-2024_05_02_11_09_11_CDT.hdf5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 11_09_11 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 281361397
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 1 2 3 4 6]
+Number of Packets with Dataword==128: 1425631
+Number of Packets with Invalid Parity: 17282202
+Number of Non-Data Packets: 17309677
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 9193330
+Packets with Invalid Parity for IO Group 2: 8088872
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000004-2024_05_02_12_00_12_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000004-2024_05_02_12_00_12_CDT.hdf5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 12_00_12 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 5040902
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 50126
+Number of Packets with Invalid Parity: 620387
+Number of Non-Data Packets: 621350
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 328137
+Packets with Invalid Parity for IO Group 2: 292250
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000005-2024_05_02_12_05_47_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000005-2024_05_02_12_05_47_CDT.hdf5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 396456
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 3955
+Number of Packets with Invalid Parity: 51509
+Number of Non-Data Packets: 51575
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 25605
+Packets with Invalid Parity for IO Group 2: 25904
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000006-2024_05_02_12_10_12_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000006-2024_05_02_12_10_12_CDT.hdf5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 20871450
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 208331
+Number of Packets with Invalid Parity: 2647295
+Number of Non-Data Packets: 2651126
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1334732
+Packets with Invalid Parity for IO Group 2: 1312563
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000008-2024_05_02_12_20_20_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000008-2024_05_02_12_20_20_CDT.hdf5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 12_20_20 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 9111757
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 90059
+Number of Packets with Invalid Parity: 1104950
+Number of Non-Data Packets: 1106635
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 580491
+Packets with Invalid Parity for IO Group 2: 524459
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000009-2024_05_02_12_23_05_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000009-2024_05_02_12_23_05_CDT.hdf5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 979329
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 9742
+Number of Packets with Invalid Parity: 120072
+Number of Non-Data Packets: 120261
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 60558
+Packets with Invalid Parity for IO Group 2: 59514
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000010-2024_05_02_12_26_16_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000010-2024_05_02_12_26_16_CDT.hdf5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 4167544
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 41323
+Number of Packets with Invalid Parity: 511294
+Number of Non-Data Packets: 512063
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 269667
+Packets with Invalid Parity for IO Group 2: 241627
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000011-2024_05_02_12_28_16_CDT.hdf5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000011-2024_05_02_12_28_16_CDT.hdf5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 4369157
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 43131
+Number of Packets with Invalid Parity: 564183
+Number of Non-Data Packets: 564949
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 309936
+Packets with Invalid Parity for IO Group 2: 254247
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000012-2024_05_02_12_36_05_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000012-2024_05_02_12_36_05_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 4162374
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 40712
+Number of Packets with Invalid Parity: 545904
+Number of Non-Data Packets: 546645
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 268868
+Packets with Invalid Parity for IO Group 2: 277036
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000012-2024_05_02_12_36_38_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000012-2024_05_02_12_36_38_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 4205006
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 41001
+Number of Packets with Invalid Parity: 573281
+Number of Non-Data Packets: 574037
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 298557
+Packets with Invalid Parity for IO Group 2: 274724
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000012-2024_05_02_12_37_09_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000012-2024_05_02_12_37_09_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 4137080
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 40744
+Number of Packets with Invalid Parity: 507681
+Number of Non-Data Packets: 508443
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 264696
+Packets with Invalid Parity for IO Group 2: 242985
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000012-2024_05_02_12_37_40_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000012-2024_05_02_12_37_40_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 4131239
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 41153
+Number of Packets with Invalid Parity: 504802
+Number of Non-Data Packets: 505540
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 265946
+Packets with Invalid Parity for IO Group 2: 238856
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/April2024/self_trigger_test_apr30/packet-0000012-2024_05_02_12_38_11_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/April2024/self_trigger_test_apr30/binary-0000012-2024_05_02_12_38_11_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 3106156
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 30064
+Number of Packets with Invalid Parity: 429946
+Number of Non-Data Packets: 430507
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 220572
+Packets with Invalid Parity for IO Group 2: 209374
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_12_46_05_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_12_46_05_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82734497
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 812846
+Number of Packets with Invalid Parity: 10172651
+Number of Non-Data Packets: 10187500
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 5334596
+Packets with Invalid Parity for IO Group 2: 4838055
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_12_56_07_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_12_56_07_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 83367478
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 806852
+Number of Packets with Invalid Parity: 10900244
+Number of Non-Data Packets: 10914981
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6063436
+Packets with Invalid Parity for IO Group 2: 4836808
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_13_06_08_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_13_06_08_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 83259053
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 805504
+Number of Packets with Invalid Parity: 10874641
+Number of Non-Data Packets: 10889227
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 5350479
+Packets with Invalid Parity for IO Group 2: 5524162
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_13_16_09_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_13_16_09_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82455700
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 806254
+Number of Packets with Invalid Parity: 10126007
+Number of Non-Data Packets: 10140535
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 5285544
+Packets with Invalid Parity for IO Group 2: 4840463
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_13_26_10_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_13_26_10_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 83718629
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 802183
+Number of Packets with Invalid Parity: 11531060
+Number of Non-Data Packets: 11545362
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6039596
+Packets with Invalid Parity for IO Group 2: 5491464
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_13_36_11_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_13_36_11_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82985520
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 795322
+Number of Packets with Invalid Parity: 10839597
+Number of Non-Data Packets: 10853820
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6016074
+Packets with Invalid Parity for IO Group 2: 4823523
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_13_46_12_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_13_46_12_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82890834
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 795123
+Number of Packets with Invalid Parity: 10813939
+Number of Non-Data Packets: 10827972
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 5307371
+Packets with Invalid Parity for IO Group 2: 5506568
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_13_56_13_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_13_56_13_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82785682
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 789621
+Number of Packets with Invalid Parity: 10801774
+Number of Non-Data Packets: 10815701
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6016796
+Packets with Invalid Parity for IO Group 2: 4784978
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_14_06_15_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_14_06_15_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 83346265
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 782394
+Number of Packets with Invalid Parity: 11507214
+Number of Non-Data Packets: 11520920
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6018278
+Packets with Invalid Parity for IO Group 2: 5488936
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_14_16_16_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_14_16_16_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 84093665
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 774697
+Number of Packets with Invalid Parity: 12455076
+Number of Non-Data Packets: 12468376
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6409755
+Packets with Invalid Parity for IO Group 2: 6045321
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_14_26_17_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_14_26_17_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 83275811
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 773782
+Number of Packets with Invalid Parity: 11661696
+Number of Non-Data Packets: 11674987
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6089748
+Packets with Invalid Parity for IO Group 2: 5571948
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_14_36_18_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_14_36_18_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 84163887
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 769427
+Number of Packets with Invalid Parity: 12501968
+Number of Non-Data Packets: 12514257
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 6384071
+Packets with Invalid Parity for IO Group 2: 6117897
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_14_46_19_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_14_46_19_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82115810
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 773592
+Number of Packets with Invalid Parity: 10521386
+Number of Non-Data Packets: 10534347
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 5460273
+Packets with Invalid Parity for IO Group 2: 5061113
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_14_56_20_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_14_56_20_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 82187756
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 768674
+Number of Packets with Invalid Parity: 10112188
+Number of Non-Data Packets: 10117571
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 5281937
+Packets with Invalid Parity for IO Group 2: 4830251
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000014-2024_05_02_15_06_21_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000014-2024_05_02_15_06_21_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 66612600
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 611251
+Number of Packets with Invalid Parity: 9208672
+Number of Non-Data Packets: 9219220
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 4815930
+Packets with Invalid Parity for IO Group 2: 4392742
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-2024_05_02_15_26_41_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-2024_05_02_15_26_41_CDT.h5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 15_26_41 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 526025
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 0
+Number of Packets with Invalid Parity: 97344
+Number of Non-Data Packets: 97358
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 37570
+Packets with Invalid Parity for IO Group 2: 59774
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-pedestal_m0-2024_05_02_15_27_18_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-pedestal_m0-2024_05_02_15_27_18_CDT.h5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 15_27_18 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 10946738
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 0
+Number of Packets with Invalid Parity: 2024766
+Number of Non-Data Packets: 2024990
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 790681
+Packets with Invalid Parity for IO Group 2: 1234085
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-pedestal_m0-2024_05_02_15_32_20_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-pedestal_m0-2024_05_02_15_32_20_CDT.h5
+DAQ Configs not found in binary file for data file timestamped at 2024_05_02 15_32_20 CDT. Moving onto next data file.
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 10929634
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 0
+Number of Packets with Invalid Parity: 2007768
+Number of Non-Data Packets: 2007989
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 788696
+Packets with Invalid Parity for IO Group 2: 1219072
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_18_18_23_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_18_18_23_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21918305
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4073714
+Number of Non-Data Packets: 4074156
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1593768
+Packets with Invalid Parity for IO Group 2: 2479946
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_18_28_25_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_18_28_25_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21900074
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 1
+Number of Packets with Invalid Parity: 4056050
+Number of Non-Data Packets: 4056494
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1574358
+Packets with Invalid Parity for IO Group 2: 2481692
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_18_38_26_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_18_38_26_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21918376
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 1
+Number of Packets with Invalid Parity: 4073105
+Number of Non-Data Packets: 4073546
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1587937
+Packets with Invalid Parity for IO Group 2: 2485168
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_18_48_27_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_18_48_27_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21910185
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4065715
+Number of Non-Data Packets: 4066155
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1583639
+Packets with Invalid Parity for IO Group 2: 2482076
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_18_58_29_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_18_58_29_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21916244
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4072904
+Number of Non-Data Packets: 4073342
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1589063
+Packets with Invalid Parity for IO Group 2: 2483841
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_19_08_30_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_19_08_30_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21867558
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4023180
+Number of Non-Data Packets: 4023620
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1593267
+Packets with Invalid Parity for IO Group 2: 2429913
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_19_18_31_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_19_18_31_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21875534
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 1
+Number of Packets with Invalid Parity: 4030644
+Number of Non-Data Packets: 4031093
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1594764
+Packets with Invalid Parity for IO Group 2: 2435880
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_19_28_32_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_19_28_32_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21915173
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4072033
+Number of Non-Data Packets: 4072477
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1593525
+Packets with Invalid Parity for IO Group 2: 2478508
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_19_38_33_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_19_38_33_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21876115
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4030508
+Number of Non-Data Packets: 4030946
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1591457
+Packets with Invalid Parity for IO Group 2: 2439051
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_19_48_34_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_19_48_34_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 21918456
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 3 4 6]
+Number of Packets with Dataword==128: 2
+Number of Packets with Invalid Parity: 4072751
+Number of Non-Data Packets: 4073191
+Unique Packet Types for Non-Data Packets: ['Write', 'Read', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 1590120
+Packets with Invalid Parity for IO Group 2: 2482631
+------------------------------------------------
+
+
+------------------------------------
+File: /global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/May2024/self_trigger_m0_test/packet-0000015-2024_05_02_19_58_35_CDT.h5
+Binary File: /global/cfs/cdirs/dune/www/data/2x2/CRS/commission/May2024/self_trigger_m0_test/binary-0000015-2024_05_02_19_58_35_CDT.h5
+Keys in file: ['_header', 'configs', 'messages', 'packets']
+Number of _header entries in file: 0
+Number of configs entries in file: 0
+Number of messages entries in file: 0
+Number of packets entries in file: 5569132
+IMPORTANT NOTE: Only IO Groups 1 and 2 are considered.
+Packet types represented in file: [0 2 4 6]
+Number of Packets with Dataword==128: 0
+Number of Packets with Invalid Parity: 1032149
+Number of Non-Data Packets: 1032261
+Unique Packet Types for Non-Data Packets: ['Write', 'Timestamp', 'Sync']
+Packets with Invalid Parity for IO Group 1: 402958
+Packets with Invalid Parity for IO Group 2: 629191
+------------------------------------------------
+
+No config datasets found for the following timestamps: ['11_05_50', '11_09_11', '12_00_12', '12_20_20', '15_26_41', '15_27_18', '15_32_20']

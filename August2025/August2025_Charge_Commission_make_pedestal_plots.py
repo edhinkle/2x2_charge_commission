@@ -78,7 +78,7 @@ def vectorize_plots():
 rasterize_plots()
 
 
-def plot_xy(d, dataset_name, date, metric, list_of_geometry_yamls, module_yaml_order, normalization, default_pixel_pitch):
+def plot_xy(d, dataset_name, date, metric, list_of_geometry_yamls, module_yaml_order, norm_min, norm_max, default_pixel_pitch):
 
     # Set up colormap and pixel pitch
     cmap = cm.hot_r
@@ -250,7 +250,7 @@ def plot_xy(d, dataset_name, date, metric, list_of_geometry_yamls, module_yaml_o
                                          chip_id, channel_id)]
                     pitch = pixel_pitch
 
-                    weight = d[str(key)][metric]/normalization
+                    weight = (d[str(key)][metric]-norm_min)/(norm_max-norm_min)
 
                     if weight > 1.0:
                         weight = 1.0
@@ -259,7 +259,7 @@ def plot_xy(d, dataset_name, date, metric, list_of_geometry_yamls, module_yaml_o
                     ax[(io_group-1) % 2, (io_group-1)//2].add_patch(r)
 
                 colorbar = fig.colorbar(cm.ScalarMappable(norm=Normalize(
-                    vmin=0, vmax=normalization), cmap=cmap), ax=ax[(io_group-1) % 2, (io_group-1)//2])
+                    vmin=norm_min, vmax=norm_max), cmap=cmap), ax=ax[(io_group-1) % 2, (io_group-1)//2])
                 ax[(io_group-1) % 2, (io_group-1) //
                     2].set_title('io_group = ' + str(io_group), size=50)
                 colorbar.ax.tick_params(labelsize=45)
@@ -269,6 +269,7 @@ def plot_xy(d, dataset_name, date, metric, list_of_geometry_yamls, module_yaml_o
                     colorbar.set_label('Standard Deviation of Dataword by Channel [ADC]', size=45)
                 if metric == 'rate':
                     colorbar.set_label('Number of Hits per Channel', size=45)
+    plt.suptitle('2x2 Charge Commissioning - dataword ' + metric + ' - ' + dataset_name + ' - ' + date, x=0.5, y=0.91, fontweight='bold', size=75)
     print('Saving...')
     #plt.show()
     plt.savefig('plots/2x2-xy-'+metric+'_'+dataset_name+'_'+date+'.png')
@@ -383,10 +384,10 @@ def make_single_dataset_plots(channel_stats_dict, dataset_name, date, list_of_ge
 
     plot_xy(d=channel_stats_dict, dataset_name=dataset_name, date=date, metric='mean', \
             list_of_geometry_yamls=list_of_geometry_yamls, module_yaml_order=module_yaml_order, \
-            normalization=max_mean, default_pixel_pitch=4.4)
+            norm_min=0, norm_max=max_mean, default_pixel_pitch=4.4)
     plot_xy(d=channel_stats_dict, dataset_name=dataset_name, date=date, metric='std', \
             list_of_geometry_yamls=list_of_geometry_yamls, module_yaml_order=module_yaml_order, \
-            normalization=max_std, default_pixel_pitch=4.4)
+            norm_min=0, norm_max=max_std, default_pixel_pitch=4.4)
     return 0
 
 # Helper method to create differential dictionarys
@@ -395,31 +396,41 @@ def make_differential_dict(nominal_dict=None, secondary_dict=None):
         parity packet count between a 'nominal' dataset and another dataset '''
     diff_dict = {}
 
+    # Open nominal dictionary
+    nominal_dict_file = nominal_dict
+    nominal_dict_file_open = open(nominal_dict_file)
+    nominal_dict = json.load(nominal_dict_file_open)
+
+    # Open secondary dictionary
+    secondary_dict_file = secondary_dict
+    secondary_dict_file_open = open(secondary_dict_file)
+    secondary_dict = json.load(secondary_dict_file_open)
+
     # Check keys in nominal dict
     for key in nominal_dict.keys():
         if key in secondary_dict:
             diff_dict[key] = {
-                'mean': nominal_dict[key]['mean'] - secondary_dict[key]['mean'],
-                'std': nominal_dict[key]['std'] - secondary_dict[key]['std'],
-                'count_valid_parity': nominal_dict[key]['count_valid_parity'] - secondary_dict[key]['count_valid_parity'],
-                'count_invalid_parity': nominal_dict[key]['count_invalid_parity'] - secondary_dict[key]['count_invalid_parity']
+                'mean': secondary_dict[key]['mean'] - nominal_dict[key]['mean'],
+                'std': secondary_dict[key]['std'] - nominal_dict[key]['std'],
+                'count_valid_parity': secondary_dict[key]['count_valid_parity'] - nominal_dict[key]['count_valid_parity'],
+                'count_invalid_parity': secondary_dict[key]['count_invalid_parity'] - nominal_dict[key]['count_invalid_parity']
             }
         elif key not in secondary_dict:
             diff_dict[key] = {
-                'mean': nominal_dict[key]['mean'],
-                'std': nominal_dict[key]['std'],
-                'count_valid_parity': nominal_dict[key]['count_valid_parity'],
-                'count_invalid_parity': nominal_dict[key]['count_invalid_parity']
+                'mean': -nominal_dict[key]['mean'],
+                'std': -nominal_dict[key]['std'],
+                'count_valid_parity': -nominal_dict[key]['count_valid_parity'],
+                'count_invalid_parity': -nominal_dict[key]['count_invalid_parity']
             }
 
     # Check keys in secondary dict
     for key in secondary_dict.keys():
         if key not in nominal_dict:
             diff_dict[key] = {
-                'mean': -secondary_dict[key]['mean'],
-                'std': -secondary_dict[key]['std'],
-                'count_valid_parity': -secondary_dict[key]['count_valid_parity'],
-                'count_invalid_parity': -secondary_dict[key]['count_invalid_parity']
+                'mean': secondary_dict[key]['mean'],
+                'std': secondary_dict[key]['std'],
+                'count_valid_parity': secondary_dict[key]['count_valid_parity'],
+                'count_invalid_parity': secondary_dict[key]['count_invalid_parity']
             }
 
     return diff_dict
@@ -427,18 +438,25 @@ def make_differential_dict(nominal_dict=None, secondary_dict=None):
 # Helper method to create plots for differential datasets
 def make_differential_plots(diff_dict=None, nominal_dataset_name=None, nominal_dataset_date=None, 
                             secondary_dataset_name=None, secondary_dataset_date=None, list_of_geometry_yamls=None, 
-                            module_yaml_order=None):
+                            module_yaml_order=None, max_mean=None, max_std=None):
     
+    min_mean_diff = -(max_mean / 2.)
+    print("Min mean diff:", min_mean_diff)
+    max_mean_diff = max_mean / 2.
+    min_std_diff = -(max_std / 2.)
+    print("Max mean std: ", min_std_diff)
+    max_std_diff = max_std / 2.
+
     # Set up output PDF
-    dataset_output_pdf = 'plots/'+nominal_dataset_name+'_'+nominal_dataset_date+'_MINUS_'+secondary_dataset_name+'_'+secondary_dataset_date+'_2x2_WCC_differential_analysis_summary.pdf'
-    plt.rcParams["figure.figsize"] = (10,8)
+    dataset_output_pdf = 'plots/'+secondary_dataset_name+'_'+secondary_dataset_date+'_MINUS_'+nominal_dataset_name+'_'+nominal_dataset_date+'_2x2_WCC_differential_analysis_summary.pdf'
+    #plt.rcParams["figure.figsize"] = (10,8)
     with PdfPages(dataset_output_pdf) as output_pdf:
 
         mean_dataword_diff = []
         std_dataword_diff = []
         count_dataword_diff = []
         for uid, stats in diff_dict.items():
-            chip_id = unique_to_chip_id(uid)
+            chip_id = unique_to_chip_id(int(uid))
             # Exclude invalid chip ids
             if chip_id not in range(11, 111):
                 continue
@@ -453,29 +471,89 @@ def make_differential_plots(diff_dict=None, nominal_dataset_name=None, nominal_d
 
         # Plot histogram of mean dataword difference
         fig, ax = plt.subplots(figsize=(8,6))
-        fig.tight_layout()
-        mean_dw_counts, mean_dw_bins = np.histogram(mean_dataword_diff, bins=dataword_bins)
-        ax.hist(mean_dw_bins[:-1], bins=dataword_bins, weights=mean_dw_counts/num_channels, color='blue', alpha=0.7)
-        ax.set_title(f"{dataset_name} Dataset on {date} \n [Excludes Channels with >2000 packets]", size=16)
-        ax.set_xlabel('Mean Dataword Value', size=14)
+        #fig.tight_layout()
+        dataword_mean_bins = np.linspace(-256, 256, 513)
+        mean_dw_counts, mean_dw_bins = np.histogram(mean_dataword_diff, bins=dataword_mean_bins)
+        ax.hist(mean_dw_bins[:-1], bins=dataword_mean_bins, weights=mean_dw_counts/num_channels, color='blue', alpha=0.7)
+        ax.set_title(f"{secondary_dataset_name} Dataset on {secondary_dataset_date} \n MINUS {nominal_dataset_name} Dataset on {nominal_dataset_date}", size=15)
+        ax.set_xlabel('Difference in Mean Dataword Value', size=14)
         ax.set_ylabel('Fraction of Channels / ADC', size=14)
         plt.xticks(size=12)
         plt.yticks(size=12)
-        ax.set_xlim(0, 52)
+        ax.set_xlim(min_mean_diff, max_mean_diff)
         ins_ax = ax.inset_axes([0.63, 0.63, 0.35, 0.35])
         ins_ax.set_title('Full Range Distribution', y=1.0, pad=-14, size=10)
         spines_to_bold = ["left", "right", "top", "bottom"]
         # Iterate through the spines and set their linewidth
         for spine_name in spines_to_bold:
             ins_ax.spines[spine_name].set_linewidth(1.5)
-        ins_ax.hist(mean_dw_bins[:-1], bins=dataword_bins, weights=mean_dw_counts/num_channels, color='blue', alpha=0.9)
+        ins_ax.hist(mean_dw_bins[:-1], bins=dataword_mean_bins, weights=mean_dw_counts/num_channels, color='blue', alpha=0.9)
         #ins_ax.set_xlabel('Mean Dataword Value', size=10)
         #ins_ax.set_ylabel('Fraction of Channels', size=10)
-        ins_ax.set_xlim(0, 260)
+        #ins_ax.set_xlim(0, 260)
         ins_ax.set_yscale("log")
         #plt.ylim(0,1.1)
         output_pdf.savefig()
         plt.close()
+
+        # Plot histogram of std datawords
+        fig, ax = plt.subplots(figsize=(8,6))
+        #fig.tight_layout()
+        max_std_value = np.max(std_dataword_diff)
+        max_bin_value = int(np.ceil(max_std_value / 10) * 10)
+        min_std_value = np.min(std_dataword_diff)
+        min_bin_value = int(np.floor(min_std_value / 10) * 10)
+        std_dw_counts, std_dw_bins = np.histogram(std_dataword_diff, bins=np.linspace(min_bin_value, max_bin_value, (max_bin_value - min_bin_value)*4+1))
+        ax.hist(std_dw_bins[:-1], bins=std_dw_bins, weights=std_dw_counts/num_channels, color='red', alpha=0.7)
+        ax.set_title(f"{secondary_dataset_name} Dataset on {secondary_dataset_date} \n MINUS {nominal_dataset_name} Dataset on {nominal_dataset_date}", size=15)
+        ax.set_xlabel('Difference in Standard Deviation of Dataword Value', size=14)
+        ax.set_ylabel('Fraction of Channels / 0.25 ADC', size=14)
+        plt.xticks(size=12)
+        plt.yticks(size=12)
+        ins_ax = ax.inset_axes([0.63, 0.63, 0.35, 0.35])
+        ins_ax.set_title('Full Range Distribution', y=1.0, pad=-14, size=10)
+        spines_to_bold = ["left", "right", "top", "bottom"]
+        # Iterate through the spines and set their linewidth
+        for spine_name in spines_to_bold:
+            ins_ax.spines[spine_name].set_linewidth(1.5)
+        ins_ax.hist(std_dw_bins[:-1], bins=std_dw_bins, weights=std_dw_counts/num_channels, color='red', alpha=0.9)
+        #ins_ax.set_xlabel('Standard Deviation of Dataword Value', size=10)
+        #ins_ax.set_ylabel('Fraction of Channels / 0.25 ADC', size=10)
+        ins_ax.set_xlim(min(std_dataword_diff-5),max(std_dataword_diff)+5)
+        ins_ax.set_yscale("log")
+        ax.set_xlim(min_std_diff, max_std_diff)
+        output_pdf.savefig()
+        plt.close()
+
+        # Plot histogram of hits per channel
+        fig, ax = plt.subplots(figsize=(10,6))
+        #fig.tight_layout()
+        max_count_value = np.max(count_dataword_diff)
+        max_bin_value = int(np.ceil(max_count_value / 10) * 10)
+        min_count_value = np.min(count_dataword_diff)
+        min_bin_value = int(np.floor(min_count_value / 10) * 10)
+        num_bins = int((max_bin_value-min_bin_value)/100 + 1)
+        count_dw_counts, count_dw_bins = np.histogram(count_dataword_diff, bins=np.linspace(min_bin_value, max_bin_value, num_bins))
+        ax.hist(count_dw_bins[:-1], bins=count_dw_bins, weights=count_dw_counts/num_channels, color='green', alpha=0.7)
+        ax.set_title(f"{secondary_dataset_name} Dataset on {secondary_dataset_date} \n MINUS {nominal_dataset_name} Dataset on {nominal_dataset_date} \n [-4000, 4000]", size=15)
+        ax.set_xlabel('Difference in Valid Data Packets per Channel', size=14)
+        ax.set_ylabel('Fraction of Channels / 100 Valid Data Packets', size=14)
+        plt.xticks(size=12)
+        plt.yticks(size=12)
+        ax.set_xlim(-4000, 4000)
+        ax.set_yscale('log')
+        output_pdf.savefig()
+        plt.close()
+
+    dataset_name = secondary_dataset_name + "__MINUS__" + nominal_dataset_name
+    date = "Set1_" + secondary_dataset_date + "_Set2_" + nominal_dataset_date
+
+    plot_xy(d=diff_dict, dataset_name=dataset_name, date=date, metric='mean', \
+            list_of_geometry_yamls=list_of_geometry_yamls, module_yaml_order=module_yaml_order, \
+            norm_min=min_mean_diff, norm_max=max_mean_diff, default_pixel_pitch=4.4)
+    plot_xy(d=diff_dict, dataset_name=dataset_name, date=date, metric='std', \
+            list_of_geometry_yamls=list_of_geometry_yamls, module_yaml_order=module_yaml_order, \
+            norm_min=min_std_diff, norm_max=max_std_diff, default_pixel_pitch=4.4)
 
 
     return 0
@@ -504,9 +582,17 @@ def main(channel_dicts=None, dataset_names=None, dates=None, nominal_dataset_idx
     # Compare datasets if multiple are given
     if num_dsets > 1:
         print("Comparing datasets...")
-        for dset in tqdm(range(num_dsets), desc="Making differential dictionaries and plots ..."):
+        nominal_dataset_name = dataset_names[nominal_dataset_idx]
+        nominal_dataset_date = dates[nominal_dataset_idx]
+        for dset in tqdm.tqdm(range(num_dsets), desc="Making differential dictionaries and plots ..."):
             if dset != nominal_dataset_idx:
-                make_differential_dict(channel_dicts[nominal_dataset_idx], channel_dicts[dset])
+                diff_dict = make_differential_dict(channel_dicts[nominal_dataset_idx], channel_dicts[dset])
+                make_differential_plots(diff_dict=diff_dict,nominal_dataset_name=nominal_dataset_name, 
+                                        nominal_dataset_date=nominal_dataset_date, 
+                                        secondary_dataset_name=dataset_names[dset], 
+                                        secondary_dataset_date=dates[dset], 
+                                        list_of_geometry_yamls=list_of_geometry_yamls, 
+                                        module_yaml_order=module_yaml_order, max_mean=max_mean, max_std=max_std)
             else: continue
 
 if __name__ == '__main__':

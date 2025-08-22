@@ -7,9 +7,10 @@ DATASET1_NAME="19August2025_Nominal_Pedestal_Mod0123"
 DATE1="2025_08_19"
 DICT1_NAME="channel_dicts/${DATASET1_NAME}_${DATE1}_FULL_channel_dict.json"
 
-#DATADIR2=None
-#DATASET2_NAME=None
-#DATE2="2025_08_12"
+DATADIR2="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/NominalPedestal_v2/"
+DATASET2_NAME="13August2025_Nominal_Pedestal_Mod123"
+DATE2="2025_08_13"
+DICT2_NAME="channel_dicts/${DATASET2_NAME}_${DATE2}_FULL_channel_dict.json"
 
 YAML_MOD0='/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/geometry/multi_tile_layout-2.3.16_mod0_swap_T8T4T7.yaml'
 YAML_MOD1='/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/geometry/multi_tile_layout-2.3.16_mod1_noswap.yaml'
@@ -26,4 +27,9 @@ if [ ! -e "${DICT1_NAME}" ]; then
     python August2025_Charge_Commission_make_channel_dictionary.py -dir ${DATADIR1} -n ${DATASET1_NAME} -d ${DATE1}
 fi
 
-python August2025_Charge_Commission_make_pedestal_plots.py -cd ${DICT1_NAME} -n ${DATASET1_NAME} -d ${DATE1} -idx ${NOM_DSET_IDX} -l ${YAML_MOD0} ${YAML_MOD1} ${YAML_MOD2} ${YAML_MOD3} -mo 0 1 2 3 -mm ${MAX_MEAN} -ms ${MAX_STD}
+if [ ! -e "${DICT2_NAME}" ]; then
+    echo "${DICT2_NAME} does not exist."
+    python August2025_Charge_Commission_make_channel_dictionary.py -dir ${DATADIR2} -n ${DATASET2_NAME} -d ${DATE2}
+fi
+
+python August2025_Charge_Commission_make_pedestal_plots.py -cd ${DICT1_NAME} ${DICT2_NAME} -n ${DATASET1_NAME} ${DATASET2_NAME} -d ${DATE1} ${DATE2} -idx ${NOM_DSET_IDX} -l ${YAML_MOD0} ${YAML_MOD1} ${YAML_MOD2} ${YAML_MOD3} -mo 0 1 2 3 -mm ${MAX_MEAN} -ms ${MAX_STD}

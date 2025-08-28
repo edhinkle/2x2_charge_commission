@@ -510,7 +510,7 @@ def make_differential_plots(diff_dict=None, nominal_dataset_name=None, nominal_d
         ax.set_ylabel('Fraction of Channels / 0.25 ADC', size=14)
         plt.xticks(size=12)
         plt.yticks(size=12)
-        ins_ax = ax.inset_axes([0.63, 0.63, 0.35, 0.35])
+        ins_ax = ax.inset_axes([0.09, 0.63, 0.35, 0.35])
         ins_ax.set_title('Full Range Distribution', y=1.0, pad=-14, size=10)
         spines_to_bold = ["left", "right", "top", "bottom"]
         # Iterate through the spines and set their linewidth

@@ -332,7 +332,7 @@ def make_single_dataset_plots(channel_stats_dict, dataset_name, date, list_of_ge
         #ins_ax.set_xlabel('Mean Dataword Value', size=10)
         #ins_ax.set_ylabel('Fraction of Channels', size=10)
         ins_ax.set_xlim(0, 260)
-        ins_ax.set_yscale("log")
+        #ins_ax.set_yscale("log")
         #plt.ylim(0,1.1)
         output_pdf.savefig()
         plt.close()
@@ -356,10 +356,10 @@ def make_single_dataset_plots(channel_stats_dict, dataset_name, date, list_of_ge
         for spine_name in spines_to_bold:
             ins_ax.spines[spine_name].set_linewidth(1.5)
         ins_ax.hist(std_dw_bins[:-1], bins=std_dw_bins, weights=std_dw_counts/num_channels, color='red', alpha=0.9)
-        #ins_ax.set_xlabel('Standard Deviation of Dataword Value', size=10)
-        #ins_ax.set_ylabel('Fraction of Channels / 0.25 ADC', size=10)
+        ins_ax.set_xlabel('Standard Deviation of Dataword Value', size=10)
+        ins_ax.set_ylabel('Fraction of Channels / 0.25 ADC', size=10)
         ins_ax.set_xlim(-1,max(std_datawords)+5)
-        ins_ax.set_yscale("log")
+        #ins_ax.set_yscale("log")
         ax.set_xlim(0, 4)
         output_pdf.savefig()
         plt.close()
@@ -378,7 +378,7 @@ def make_single_dataset_plots(channel_stats_dict, dataset_name, date, list_of_ge
         plt.xticks(size=12)
         plt.yticks(size=12)
         ax.set_xlim(0)
-        ax.set_yscale('log')
+        #ax.set_yscale('log')
         output_pdf.savefig()
         plt.close()
 
@@ -491,7 +491,7 @@ def make_differential_plots(diff_dict=None, nominal_dataset_name=None, nominal_d
         #ins_ax.set_xlabel('Mean Dataword Value', size=10)
         #ins_ax.set_ylabel('Fraction of Channels', size=10)
         #ins_ax.set_xlim(0, 260)
-        ins_ax.set_yscale("log")
+        #ins_ax.set_yscale("log")
         #plt.ylim(0,1.1)
         output_pdf.savefig()
         plt.close()
@@ -520,7 +520,7 @@ def make_differential_plots(diff_dict=None, nominal_dataset_name=None, nominal_d
         #ins_ax.set_xlabel('Standard Deviation of Dataword Value', size=10)
         #ins_ax.set_ylabel('Fraction of Channels / 0.25 ADC', size=10)
         ins_ax.set_xlim(min(std_dataword_diff-5),max(std_dataword_diff)+5)
-        ins_ax.set_yscale("log")
+        #ins_ax.set_yscale("log")
         ax.set_xlim(min_std_diff, max_std_diff)
         output_pdf.savefig()
         plt.close()
@@ -541,7 +541,7 @@ def make_differential_plots(diff_dict=None, nominal_dataset_name=None, nominal_d
         plt.xticks(size=12)
         plt.yticks(size=12)
         ax.set_xlim(-4000, 4000)
-        ax.set_yscale('log')
+        #ax.set_yscale('log')
         output_pdf.savefig()
         plt.close()
 
@@ -573,10 +573,11 @@ def main(channel_dicts=None, dataset_names=None, dates=None, nominal_dataset_idx
         channel_dict = json.load(channel_dict_file_open)
         dataset_name = dataset_names[dset]
         date = dates[dset]
+        timestamp = "_".join(channel_dict_file.split("_")[4:11])
 
-        print(f"Processing dataset '{dataset_name}' on date '{date}'...")
+        print(f"Processing dataset '{dataset_name}' on date '{timestamp}'...")
 
-        make_single_dataset_plots(channel_dict, dataset_name, date, list_of_geometry_yamls, module_yaml_order, \
+        make_single_dataset_plots(channel_dict, dataset_name, timestamp, list_of_geometry_yamls, module_yaml_order, \
                               max_mean, max_std)
 
     # Compare datasets if multiple are given

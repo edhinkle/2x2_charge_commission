@@ -89,7 +89,7 @@ def get_files_in_dataset(datadir, date):
     #    h5_files_new = glob.glob(f'{dir}/*packet*{date}*5')
     #    h5_files += h5_files_new
     # For now, only looking at datasets all in one directory
-    h5_files = glob.glob(f'{datadir}/*packet-N*{date}*5')
+    h5_files = glob.glob(f'{datadir}/*packet-*{date}*h5')
 
     print("Number of H5 Files:", len(h5_files), "in dataset from directory:", datadir)
     return h5_files
@@ -176,7 +176,7 @@ def make_channel_running_stats_dict_one_file(h5_file, dataset_name, date, max_en
     })
     valid_stats = df_valid.groupby("uid")["dataword"].agg(
         sum="sum",
-        sum_of_squares=lambda x: (x**2).sum(),
+        sum_of_squares=lambda x: (x.astype(np.int64) ** 2).sum(),
         count="count"
     )
 
@@ -209,9 +209,16 @@ def main(h5_file=None, idx=None, dataset_name=None, date=None):
     print(f"Getting running stats dictionary for file '{h5_file}' in '{dataset_name}' on date '{date}'...")
 
     dataset_running_stats_dict = make_channel_running_stats_dict_one_file(h5_file, dataset_name, date, max_entries=-1)
-    save_dict_to_json(dataset_running_stats_dict, "channel_dicts/"+dataset_name+"_"+date+"_running_channel_dict_"+str(idx), False)
 
-    print(f"Saved dictionary to channel_dicts/"+dataset_name+"_"+date+"_running_channel_dict_"+str(idx)+".json")
+    # Retrieve timestamp
+    h5_basename = os.path.basename(h5_file)
+    after_dash = h5_basename.split("-", 2)[-1] # take everything after the first "-"
+    timestamp = after_dash.replace(".h5", "") # remove .h5
+
+    save_dict_to_json(dataset_running_stats_dict, "channel_dicts/"+dataset_name+"_"+timestamp+"_running_channel_dict", False)
+    # save_dict_to_json(dataset_running_stats_dict, "channel_dicts/"+dataset_name+"_"+date+"_running_channel_dict_"+str(idx), False)
+
+    print(f"Saved dictionary to channel_dicts/"+dataset_name+"_"+timestamp+"_running_channel_dict"+".json")
 
 
 if __name__ == '__main__':

@@ -99,12 +99,12 @@ def save_dict_to_json(d, name, if_tuple):
             json.dump(updated_d, outfile, indent=4)
 
 
-def combine_channel_running_stats_dicts(dict_dir, dataset_name, date):
+def combine_channel_running_stats_dicts(dict_files):
 
     channel_full_running_stats_dict = defaultdict(lambda: {'sum': 0.0, 'sum_of_squares': 0.0, 'count': 0, 'count_invalid_parity':0})
     channel_final_stats_dict = {}
 
-    for i, dict_file in enumerate(glob.glob(dict_dir+'/'+dataset_name+"_"+date+'_running_channel_dict*.json')):
+    for dict_file in dict_files:
         with open(dict_file) as running_dict_file:
             print(f"Opening dictionary file {dict_file}")
             running_dict = json.load(running_dict_file)
@@ -120,8 +120,8 @@ def combine_channel_running_stats_dicts(dict_dir, dataset_name, date):
         if stats['count'] > 0:
             mean = stats['sum'] / stats['count']
             variance = (stats['sum_of_squares'] / stats['count']) - (mean ** 2)
-            #std = np.sqrt(variance)
-            std = np.sqrt(np.maximum(variance, 0.0)) # prevent negative varianece
+            std = np.sqrt(variance)
+            #std = np.sqrt(np.maximum(variance, 0.0)) # prevent negative varianece
             channel_final_stats_dict[uid] = {
                 'mean': np.round(mean,2),
                 'std': np.round(std,2), 
@@ -138,18 +138,38 @@ def combine_channel_running_stats_dicts(dict_dir, dataset_name, date):
 
     return channel_final_stats_dict
 
-def main(dict_dir="run_parallel/channel_dicts", dataset_name=None, date=None):
+def main(dict_dir="run_parallel/channel_dicts", dataset_name=None, date=None, batch_size=10):
 
-    
-    dataset_FULL_stats_dict = combine_channel_running_stats_dicts(dict_dir, dataset_name, date)
+    dict_files = sorted(glob.glob(f"{dict_dir}/{dataset_name}_{date}*_running_channel_dict*.json"))
+    if batch_size > 0:
+        # process in batches
+        for batch_idx in range(0, len(dict_files), batch_size):
+            batch_files = dict_files[batch_idx:batch_idx+batch_size]
+            firstfile_name = os.path.basename(batch_files[0]).split("_")
+            timestamp = "_".join(firstfile_name[2:9])
+            channel_final_stats_dict = combine_channel_running_stats_dicts(batch_files)
+
+            outname = f"{dict_dir}/{dataset_name}_{timestamp}_BATCH{batch_idx//batch_size}.json"
+            print("Saving final dictionary to", outname)
+            with open(outname, "w") as outfile:
+                json.dump(channel_final_stats_dict, outfile, indent=4)
+    else:
+        # combine all into one (original behavior)
+        channel_final_stats_dict = combine_channel_running_stats_dicts(dict_files)
+        outname = f"{dict_dir}/{dataset_name}_{date}_FULL.json"
+        print("Saving final dictionary to", outname)
+        with open(outname, "w") as outfile:
+            json.dump(channel_final_stats_dict, outfile, indent=4)
+
+    #dataset_FULL_stats_dict = combine_channel_running_stats_dicts(dict_dir, dataset_name, date)
 
     # Save the combined dictionary to a new JSON file
-    with open('channel_dicts/'+dataset_name+"_"+date+'_FULL_channel_dict.json', 'w') as outfile:
-        json.dump(dataset_FULL_stats_dict, outfile, indent=4)
+    #with open('channel_dicts/'+dataset_name+"_"+date+'_FULL_channel_dict.json', 'w') as outfile:
+    #    json.dump(dataset_FULL_stats_dict, outfile, indent=4)
 
     #os.system(f"rm -rf {dict_dir}/{dataset_name}_{date}_running_channel_dict_*.json")
 
-    print(f"Channel statistics dictionary for dataset '{dataset_name}' on date '{date}' saved.")
+    #print(f"Channel statistics dictionary for dataset '{dataset_name}' on date '{date}' saved.")
 
 
 if __name__ == '__main__':
@@ -157,5 +177,7 @@ if __name__ == '__main__':
     parser.add_argument('-dir','--dict_dir', default="run_parallel/channel_dicts", type=str,help='''Directory with running stats dicts.''')
     parser.add_argument('-n','--dataset_name', default=None, type=str,help='''name of dataset/sample (e.g. Nominal, LRS_On)''')
     parser.add_argument('-d','--date', default=None, type=str,help='''date of data files in format YYYY_MM_DD for dataset''')
+    parser.add_argument("--batch_size", default=10, type=int,
+                        help="Number of JSON files per batch (default=10). Use 0 to combine all at once.")
     args = parser.parse_args()
     main(**vars(args))

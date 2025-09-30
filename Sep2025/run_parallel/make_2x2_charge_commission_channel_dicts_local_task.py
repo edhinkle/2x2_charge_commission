@@ -16,7 +16,7 @@ def get_files_in_dataset(datadir, date):
     """
     Get list of files in the dataset for a given date.
     """
-    h5_files = glob.glob(f'{datadir}/*packet-3min*h5')
+    h5_files = glob.glob(f'{datadir}/*packet-3min*{date}*h5')
     print("Number of H5 Files:", len(h5_files), "in dataset from directory:", datadir)
     return h5_files
 

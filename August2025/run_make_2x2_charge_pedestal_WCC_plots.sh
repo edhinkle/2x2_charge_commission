@@ -52,6 +52,11 @@ DATASET10_NAME="Cryocooler_Jacket_Vacuum_Pump_On_Warm"
 DATE10="2025_08_29"
 DICT10_NAME="channel_dicts/29August2025_Pedestal_Mod0123_Vacuum_Pump_On_2025_08_29_FULL_channel_dict.json"
 
+DATADIR11="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/differential_PMalloff/"
+DATASET11_NAME="Purity_Monitor_All_Off_Warm"
+DATE11="2025_09_02"
+DICT11_NAME="channel_dicts/02September2025_Pedestal_Mod0123_PM_AllOff_2025_09_02_FULL_channel_dict.json"
+
 YAML_MOD0='/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/geometry/multi_tile_layout-2.3.16_mod0_swap_T8T4T7.yaml'
 YAML_MOD1='/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/geometry/multi_tile_layout-2.3.16_mod1_noswap.yaml'
 YAML_MOD2='/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/geometry/multi_tile_layout-2.5.16_mod2_swap_T7T8.yaml'
@@ -72,9 +77,9 @@ module load python
 #    python August2025_Charge_Commission_make_channel_dictionary.py -dir ${DATADIR2} -n ${DATASET2_NAME} -d ${DATE2}
 #fi
 
-python August2025_Charge_Commission_make_pedestal_plots.py -cd ${DICT1_NAME} ${DICT7_NAME} ${DICT8_NAME} ${DICT9_NAME} ${DICT10_NAME} \
-                                                           -n ${DATASET1_NAME} ${DATASET7_NAME} ${DATASET8_NAME} ${DATASET9_NAME} ${DATASET10_NAME} \
-                                                           -d ${DATE1} ${DATE7} ${DATE8} ${DATE9} ${DATE10} \
+python August2025_Charge_Commission_make_pedestal_plots.py -cd ${DICT1_NAME} ${DICT11_NAME} \
+                                                           -n ${DATASET1_NAME} ${DATASET11_NAME} \
+                                                           -d ${DATE1} ${DATE11} \
                                                            -idx ${NOM_DSET_IDX} \
                                                            -l ${YAML_MOD0} ${YAML_MOD1} ${YAML_MOD2} ${YAML_MOD3} \
                                                            -mo 0 1 2 3 \

@@ -19,6 +19,7 @@ from collections import defaultdict
 import yaml
 import tqdm
 import os
+import pandas as pd
 
 from matplotlib.axes import Axes
 
@@ -153,28 +154,60 @@ def make_channel_running_stats_dict_one_file(h5_file, dataset_name, date, max_en
     valid_data_mask = np.logical_and(data_packet_mask, valid_parity_mask)
     adc_datawords_valid = f['packets']['dataword'][valid_data_mask][:max_entries]
     unique_ids_valid = unique_channel_id(f['packets'][valid_data_mask][:max_entries])
-    unique_id_set_valid = np.unique(unique_ids_valid)
 
-    # Update channel statistics
-    for uid in tqdm.tqdm(unique_id_set_valid, desc="Looping over active channels with VALID packets ..."):
+    # Update channel statistics -- original method (slower)
+    #unique_id_set_valid = np.unique(unique_ids_valid)
+    #for uid in tqdm.tqdm(unique_id_set_valid, desc="Looping over active channels with VALID packets ..."):
+    #    stats = channel_running_stats_dict[uid]
+    #    channel_mask = unique_ids_valid == uid
+    #    channel_datawords = adc_datawords_valid[channel_mask]
+    #    stats = update_channel_dict_valid_packet_stats(stats, channel_datawords)
+    #    channel_running_stats_dict[uid] = stats
+
+    # Update channel statistics -- improved method (faster)
+    df_valid = pd.DataFrame({
+        "uid": unique_ids_valid,
+        "dataword": adc_datawords_valid
+    })
+    valid_stats = df_valid.groupby("uid")["dataword"].agg(
+        sum="sum",
+        sum_of_squares=lambda x: (x.astype(np.int64) ** 2).sum(),
+        count="count"
+    )
+
+    for uid, row in tqdm.tqdm(valid_stats.iterrows(), desc="Looping over active channels with VALID packets ..."):
         stats = channel_running_stats_dict[uid]
-        channel_mask = unique_ids_valid == uid
-        channel_datawords = adc_datawords_valid[channel_mask]
-        stats = update_channel_dict_valid_packet_stats(stats, channel_datawords)
+        stats['sum'] += row['sum']
+        stats['sum_of_squares'] += row['sum_of_squares']
+        stats['count'] += row['count']
         channel_running_stats_dict[uid] = stats
 
     # Also look at invalid parity packet count
     invalid_parity_mask = packets[:]['valid_parity'] == 0  # Packets with invalid parity
     invalid_data_mask = np.logical_and(data_packet_mask, invalid_parity_mask)
     unique_ids_invalid = unique_channel_id(f['packets'][invalid_data_mask][:max_entries])
-    unique_id_set_invalid = np.unique(unique_ids_invalid)
+    #unique_id_set_invalid = np.unique(unique_ids_invalid)
 
-    # Update invalid channel count
-    for uid in tqdm.tqdm(unique_id_set_invalid, desc="Looping over active channels with INVALID packets ..."):
+    # Update invalid channel count -- original method (slower)
+    #unique_id_set_invalid = np.unique(unique_ids_invalid)
+    #for uid in tqdm.tqdm(unique_id_set_invalid, desc="Looping over active channels with INVALID packets ..."):
+    #    stats = channel_running_stats_dict[uid]
+    #    channel_mask = unique_ids_invalid == uid
+    #    channel_invalid_packets = unique_ids_invalid[channel_mask]
+    #    stats = update_channel_dict_invalid_packet_count(stats, channel_invalid_packets)
+    #    channel_running_stats_dict[uid] = stats
+
+    # Update channel statistics -- improved method (faster)
+    df_invalid = pd.DataFrame({
+        "uid": unique_ids_invalid,
+    })
+    invalid_stats = df_invalid.groupby("uid")["dataword"].agg(
+        count="count"
+    )
+
+    for uid, row in tqdm.tqdm(invalid_stats.iterrows(), desc="Looping over active channels with INVALID packets ..."):
         stats = channel_running_stats_dict[uid]
-        channel_mask = unique_ids_invalid == uid
-        channel_invalid_packets = unique_ids_invalid[channel_mask]
-        stats = update_channel_dict_invalid_packet_count(stats, channel_invalid_packets)
+        stats['count_invalid_parity'] += row['count']
         channel_running_stats_dict[uid] = stats
 
     return channel_running_stats_dict
@@ -184,9 +217,16 @@ def main(h5_file=None, idx=None, dataset_name=None, date=None):
     print(f"Getting running stats dictionary for file '{h5_file}' in '{dataset_name}' on date '{date}'...")
 
     dataset_running_stats_dict = make_channel_running_stats_dict_one_file(h5_file, dataset_name, date, max_entries=-1)
-    save_dict_to_json(dataset_running_stats_dict, "channel_dicts/"+dataset_name+"_"+date+"_running_channel_dict_"+str(idx), False)
 
-    print(f"Saved dictionary to channel_dicts/"+dataset_name+"_"+date+"_running_channel_dict_"+str(idx)+".json")
+    # Retrieve timestamp
+    h5_basename = os.path.basename(h5_file)
+    after_dash = h5_basename.split("-", 2)[-1] # take everything after the first "-"
+    timestamp = after_dash.replace(".h5", "") # remove .h5
+
+    save_dict_to_json(dataset_running_stats_dict, "channel_dicts/"+dataset_name+"_"+timestamp+"_running_channel_dict", False)
+    # save_dict_to_json(dataset_running_stats_dict, "channel_dicts/"+dataset_name+"_"+date+"_running_channel_dict_"+str(idx), False)
+
+    print(f"Saved dictionary to channel_dicts/"+dataset_name+"_"+timestamp+"_running_channel_dict"+".json")
 
 
 if __name__ == '__main__':

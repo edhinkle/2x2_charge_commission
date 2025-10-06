@@ -104,7 +104,7 @@ def combine_channel_running_stats_dicts(dict_dir, dataset_name, date):
     channel_full_running_stats_dict = defaultdict(lambda: {'sum': 0.0, 'sum_of_squares': 0.0, 'count': 0, 'count_invalid_parity':0})
     channel_final_stats_dict = {}
 
-    for i, dict_file in enumerate(glob.glob(dict_dir+'/'+dataset_name+"_"+date+'_running_channel_dict*.json')):
+    for i, dict_file in enumerate(glob.glob(dict_dir+'/'+dataset_name+"_"+'*_running_channel_dict.json')):
         with open(dict_file) as running_dict_file:
             print(f"Opening dictionary file {dict_file}")
             running_dict = json.load(running_dict_file)

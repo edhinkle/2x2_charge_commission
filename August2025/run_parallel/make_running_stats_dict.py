@@ -89,7 +89,7 @@ def get_files_in_dataset(datadir, date):
     #    h5_files_new = glob.glob(f'{dir}/*packet*{date}*5')
     #    h5_files += h5_files_new
     # For now, only looking at datasets all in one directory
-    h5_files = glob.glob(f'{datadir}/*packet-N*{date}*5')
+    h5_files = glob.glob(f'{datadir}/*packet-*{date}*5')
 
     print("Number of H5 Files:", len(h5_files), "in dataset from directory:", datadir)
     return h5_files
@@ -185,30 +185,31 @@ def make_channel_running_stats_dict_one_file(h5_file, dataset_name, date, max_en
     # Also look at invalid parity packet count
     invalid_parity_mask = packets[:]['valid_parity'] == 0  # Packets with invalid parity
     invalid_data_mask = np.logical_and(data_packet_mask, invalid_parity_mask)
+    adc_datawords_invalid = f['packets']['dataword'][valid_data_mask][:max_entries]
     unique_ids_invalid = unique_channel_id(f['packets'][invalid_data_mask][:max_entries])
-    #unique_id_set_invalid = np.unique(unique_ids_invalid)
 
     # Update invalid channel count -- original method (slower)
-    #unique_id_set_invalid = np.unique(unique_ids_invalid)
-    #for uid in tqdm.tqdm(unique_id_set_invalid, desc="Looping over active channels with INVALID packets ..."):
-    #    stats = channel_running_stats_dict[uid]
-    #    channel_mask = unique_ids_invalid == uid
-    #    channel_invalid_packets = unique_ids_invalid[channel_mask]
-    #    stats = update_channel_dict_invalid_packet_count(stats, channel_invalid_packets)
-    #    channel_running_stats_dict[uid] = stats
-
-    # Update channel statistics -- improved method (faster)
-    df_invalid = pd.DataFrame({
-        "uid": unique_ids_invalid,
-    })
-    invalid_stats = df_invalid.groupby("uid")["dataword"].agg(
-        count="count"
-    )
-
-    for uid, row in tqdm.tqdm(invalid_stats.iterrows(), desc="Looping over active channels with INVALID packets ..."):
+    unique_id_set_invalid = np.unique(unique_ids_invalid)
+    for uid in tqdm.tqdm(unique_id_set_invalid, desc="Looping over active channels with INVALID packets ..."):
         stats = channel_running_stats_dict[uid]
-        stats['count_invalid_parity'] += row['count']
+        channel_mask = unique_ids_invalid == uid
+        channel_invalid_packets = unique_ids_invalid[channel_mask]
+        stats = update_channel_dict_invalid_packet_count(stats, channel_invalid_packets)
         channel_running_stats_dict[uid] = stats
+
+    ## Update channel statistics -- improved method (faster)
+    #df_invalid = pd.DataFrame({
+    #    "uid": unique_ids_invalid,
+    #    "dataword": adc_datawords_invalid
+    #})
+    #invalid_stats = df_invalid.groupby("uid")["dataword"].agg(
+    #    count="count"
+    #)
+#
+    #for uid, row in tqdm.tqdm(invalid_stats.iterrows(), desc="Looping over active channels with INVALID packets ..."):
+    #    stats = channel_running_stats_dict[uid]
+    #    stats['count_invalid_parity'] += row['count']
+    #    channel_running_stats_dict[uid] = stats
 
     return channel_running_stats_dict
 

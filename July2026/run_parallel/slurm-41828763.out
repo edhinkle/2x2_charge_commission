@@ -1,0 +1,516 @@
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+srun: error: nid006822: tasks 53,61,94: Exited with exit code 1
+srun: Terminating StepId=41828763.0
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+Traceback (most recent call last):
+  File "/global/cfs/cdirs/dune/users/ehinkle/nd_prototypes_ana/2x2_charge_commission/August2025/run_parallel/./August2025_Charge_Commission_make_channel_dictionary_PARALLELIZED.py", line 5, in <module>
+    import matplotlib as mlp
+ModuleNotFoundError: No module named 'matplotlib'
+slurmstepd: error: *** STEP 41828763.0 ON nid006822 CANCELLED AT 2025-08-19T20:10:57 ***
+srun: error: nid006822: tasks 0-52,54-60,62-93,95-127: Exited with exit code 1

@@ -1,0 +1,112 @@
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 11
+End idx: 12
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 4
+End idx: 5
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 1
+End idx: 2
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 12
+End idx: 13
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 17
+End idx: 18
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 20
+End idx: 21
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 21
+End idx: 22
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 7
+End idx: 8
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 13
+End idx: 14
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 23
+End idx: 24
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 25
+End idx: 26
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 9
+End idx: 10
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 19
+End idx: 20
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 5
+End idx: 6
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 24
+End idx: 25
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 2
+End idx: 3
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 3
+End idx: 4
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 8
+End idx: 9
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 18
+End idx: 19
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 14
+End idx: 15
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 26
+End idx: 27
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 10
+End idx: 11
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 16
+End idx: 17
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 15
+End idx: 16
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 22
+End idx: 23
+All files accounted for already :)
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 6
+End idx: 7
+All files accounted for already :)
+Getting running stats dictionary for file '/global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2/packet-60min_pedestal_all_Off-2025_08_26_01_06_44_CDT.h5' in 'trial_pedestal2' on date '2026_07_07'...
+File: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2/packet-60min_pedestal_all_Off-2025_08_26_01_06_44_CDT.h5 in Set trial_pedestal2
+Looping over active channels with VALID packets ...: 0it [00:00, ?it/s]Looping over active channels with VALID packets ...: 5292it [00:00, 52910.97it/s]Looping over active channels with VALID packets ...: 10584it [00:00, 52533.44it/s]Looping over active channels with VALID packets ...: 16277it [00:00, 54532.38it/s]Looping over active channels with VALID packets ...: 21870it [00:00, 55079.93it/s]Looping over active channels with VALID packets ...: 27586it [00:00, 55826.65it/s]Looping over active channels with VALID packets ...: 33171it [00:00, 55832.25it/s]Looping over active channels with VALID packets ...: 38862it [00:00, 56183.34it/s]Looping over active channels with VALID packets ...: 44481it [00:00, 56093.90it/s]Looping over active channels with VALID packets ...: 50117it [00:00, 56174.93it/s]Looping over active channels with VALID packets ...: 55759it [00:01, 56250.15it/s]Looping over active channels with VALID packets ...: 61385it [00:01, 45289.18it/s]Looping over active channels with VALID packets ...: 66784it [00:01, 47550.35it/s]Looping over active channels with VALID packets ...: 72315it [00:01, 49651.34it/s]Looping over active channels with VALID packets ...: 77930it [00:01, 51464.11it/s]Looping over active channels with VALID packets ...: 83559it [00:01, 52838.17it/s]Looping over active channels with VALID packets ...: 89178it [00:01, 53806.85it/s]Looping over active channels with VALID packets ...: 94898it [00:01, 54798.14it/s]Looping over active channels with VALID packets ...: 100632it [00:01, 55545.72it/s]Looping over active channels with VALID packets ...: 106302it [00:01, 55886.43it/s]Looping over active channels with VALID packets ...: 112049it [00:02, 56354.94it/s]Looping over active channels with VALID packets ...: 117765it [00:02, 56593.45it/s]Looping over active channels with VALID packets ...: 123442it [00:02, 56585.75it/s]Looping over active channels with VALID packets ...: 129120it [00:02, 56640.80it/s]Looping over active channels with VALID packets ...: 134793it [00:02, 56600.68it/s]Looping over active channels with VALID packets ...: 140459it [00:02, 56551.60it/s]Looping over active channels with VALID packets ...: 146170it [00:02, 56717.14it/s]Looping over active channels with VALID packets ...: 151845it [00:02, 56383.18it/s]Looping over active channels with VALID packets ...: 157496it [00:02, 56419.70it/s]Looping over active channels with VALID packets ...: 163140it [00:02, 56345.10it/s]Looping over active channels with VALID packets ...: 168776it [00:03, 56165.11it/s]Looping over active channels with VALID packets ...: 174394it [00:03, 56141.92it/s]Looping over active channels with VALID packets ...: 180009it [00:03, 55472.44it/s]Looping over active channels with VALID packets ...: 185704it [00:03, 55910.07it/s]Looping over active channels with VALID packets ...: 191315it [00:03, 55968.25it/s]Looping over active channels with VALID packets ...: 196980it [00:03, 56171.19it/s]Looping over active channels with VALID packets ...: 202672it [00:03, 56393.46it/s]Looping over active channels with VALID packets ...: 208368it [00:03, 56562.21it/s]Looping over active channels with VALID packets ...: 214025it [00:03, 56514.41it/s]Looping over active channels with VALID packets ...: 219748it [00:03, 56726.66it/s]Looping over active channels with VALID packets ...: 225426it [00:04, 56742.41it/s]Looping over active channels with VALID packets ...: 231101it [00:04, 56434.68it/s]Looping over active channels with VALID packets ...: 236745it [00:04, 56098.60it/s]Looping over active channels with VALID packets ...: 242358it [00:04, 56106.89it/s]Looping over active channels with VALID packets ...: 248040it [00:04, 56317.49it/s]Looping over active channels with VALID packets ...: 253751it [00:04, 56552.21it/s]Looping over active channels with VALID packets ...: 259407it [00:04, 56483.76it/s]Looping over active channels with VALID packets ...: 265081it [00:04, 56558.99it/s]Looping over active channels with VALID packets ...: 270772it [00:04, 56661.20it/s]Looping over active channels with VALID packets ...: 276439it [00:04, 56603.33it/s]Looping over active channels with VALID packets ...: 282100it [00:05, 56315.62it/s]Looping over active channels with VALID packets ...: 287786it [00:05, 56475.15it/s]Looping over active channels with VALID packets ...: 293537it [00:05, 56782.55it/s]Looping over active channels with VALID packets ...: 299226it [00:05, 56814.48it/s]Looping over active channels with VALID packets ...: 304908it [00:05, 56784.60it/s]Looping over active channels with VALID packets ...: 310593it [00:05, 56803.32it/s]Looping over active channels with VALID packets ...: 316288it [00:05, 56844.61it/s]Looping over active channels with VALID packets ...: 321973it [00:05, 56821.71it/s]Looping over active channels with VALID packets ...: 327656it [00:05, 56731.98it/s]Looping over active channels with VALID packets ...: 333330it [00:05, 56703.51it/s]Looping over active channels with VALID packets ...: 336075it [00:06, 55577.90it/s]
+Looping over active channels with INVALID packets ...:   0%|          | 0/1113 [00:00<?, ?it/s]Looping over active channels with INVALID packets ...: 100%|██████████| 1113/1113 [00:00<00:00, 89564.11it/s]
+Saved dictionary to channel_dicts/trial_pedestal2_2025_08_26_01_06_44_CDT_running_channel_dict.json
+Number of H5 Files: 1 in dataset from directory: /global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2
+Start idx: 0
+End idx: 1

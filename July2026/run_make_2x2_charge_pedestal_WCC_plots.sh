@@ -1,30 +1,32 @@
 #!/usr/bin/env bash
 
 NOM_DSET_IDX=0 # Nominal dataset is index 0 unless otherwise noted
-'''
-DATADIR1="/global/cfs/cdirs/dune/users/edgarmao/trial_pedestal/"
-#DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/June2024/thresholding_06_07/"
-DATASET1_NAME="trial_pedestal"
-DATE1="2026_07_07"
-DICT1_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/trial_pedestal_2026_07_07_FULL_channel_dict.json"
-'''
 
-DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/Nominal_Pedestal_Correct_Triggering/"
-#DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/nearline/packet/commission/June2024/thresholding_06_07/"
-DATASET1_NAME="Nominal_Pedestal_Correct_Triggering"
-DATE1="2025_08_26"
-DICT1_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/26August2025_Nominal_Pedestal_Periodic_Reset_Enabled_Mod0123_2025_08_26_FULL_channel_dict.json"
 
-'''
-DATADIR2="/global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2/"
-DATASET2_NAME="trial_pedestal2"
-DATE2="2026_07_07"
-DICT2_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/trial_pedestal2_2026_07_07_FULL_channel_dict.json"
-'''
-DATADIR2="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/WholeDetector_20250822/"
-DATASET2_NAME="WholeDetector"
-DATE2="2025_08_22"
-DICT2_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/22August2025_Nominal_Pedestal_Mod0123_2025_08_22_FULL_channel_dict.json"
+#DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/nearline_run3/packet/WarmCommissioning/WholeDetectorPedestal"
+#DATASET1_NAME="Run3_WarmComissioning_NominalPedestal"
+#DATE1="2026_07_20"
+#DICT1_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/Run3_WarmComissioning_NominalPedestal_2026_07_20_FULL_channel_dict.json"
+
+#DATADIR1="/project/dune/data/2x2/CRS.run2/ColdOperations/data/2025_Operations_Cold/Pedestal_1002_Nominal_Configuration"
+#DATASET1_NAME="Nominal_Pedestal_Cold_Cryo_Pump_On"
+#DATE1="2025_10_02"
+#DICT1_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/Nominal_Pedestal_Cold_Cryo_Pump_On_2025_10_02_FULL_channel_dict.json"
+
+DATADIR1="/global/cfs/cdirs/dune/www/data/2x2/nearline_run3/packet/ColdCommissioning/Pedestal_prc4"
+DATASET1_NAME="Run3_ColdComissioning_WholeDetectorPedestal-prc4"
+DATE1="2026_09_08"
+DICT1_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/Run3_ColdComissioning_WholeDetectorPedestal-prc4_2026_09_08_FULL_channel_dict.json"
+
+#DATADIR2="/global/cfs/cdirs/dune/users/edgarmao/trial_pedestal2/"
+#DATASET2_NAME="trial_pedestal2"
+#DATE2="2026_07_07"
+#DICT2_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/trial_pedestal2_2026_07_07_FULL_channel_dict.json"
+
+DATADIR2="/global/cfs/cdirs/dune/www/data/2x2/nearline_run3/packet/ColdCommissioning/Pedestal_prc1"
+DATASET2_NAME="Run3_ColdComissioning_WholeDetectorPedestal-prc1"
+DATE2="2026_09_08"
+DICT2_NAME="/global/cfs/cdirs/dune/users/edgarmao/2x2_crs_analysis/2x2_charge_commission/July2026/channel_dicts/Run3_ColdComissioning_WholeDetectorPedestal-prc1_2026_09_08_FULL_channel_dict.json"
 
 #DATADIR3="/global/cfs/cdirs/dune/www/data/2x2/CRS.run2/WarmComissioning/Nominal_Pedestal_256us/"
 #DATASET3_NAME="Periodic_Reset_Frequency_256us_Warm"

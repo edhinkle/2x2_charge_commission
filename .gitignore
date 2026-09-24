@@ -1,6 +1,7 @@
 July2026/channel_histograms/
+July2026/comparison_histograms/
 July2026/*.log
 July2026/run_parallel/*.out
+July2026/run_parallel/channel_dicts/
 July2026/channel_dicts/
 July2026/plots/
-July2026/run_parallel/channel_dicts

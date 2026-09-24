@@ -1,15 +1,29 @@
 #!/usr/bin/env python3
 """
-Plot raw ADC/dataword histograms for all LArPix pixels in a data file.
+Plot raw ADC/dataword histograms for all LArPix pixels in one or two HDF5
+packet files.
 
-Outputs:
-    * Histrograms depciting the distribution of the raw ADC of each LArPix pixel
+Single-dataset mode:
+    * Produces one histogram for each LArPix pixel.
 
-Notes:
-  * Selection follows the same packet convention as the original plotting code:
+Two-dataset mode:
+    * Produces one histogram for each pixel with two overlapping histograms,
+      one for each input dataset.
+    * The two datasets are plotted using the same ADC binning for a direct
+      comparison.
+    * Pixels present in only one dataset are still plotted.
+
+Selection follows the same packet convention as the original plotting code:
     packet_type == 0 and valid_parity == 1 are used for ADC/dataword packets.
-  * YAML geometry is not needed unless you later want the per-channel plots
-    placed at physical pixel positions.
+
+Usage:
+python July2026_Charge_Comission_Pixel-Level_Histogram.py \
+    --filename /path/to/dataset1.h5 \
+    --filename2 /path/to/dataset2.h5 \
+    --label1 "Before" \
+    --label2 "After" \
+    --output_dir comparison_histograms
+
 """
 
 from __future__ import annotations
@@ -247,29 +261,109 @@ def generate_all_channel_histograms(
     adc_min=None,
     adc_max=None,
     bin_width=1,
+    data2=None,
+    label1="Dataset 1",
+    label2="Dataset 2",
 ):
     """
-    Generate one histogram for every channel.
-    """
+    Generate one histogram for every pixel.
 
+    In single-dataset mode, one histogram is produced per pixel.
+
+    In dual-dataset mode, each pixel gets one plot containing two overlapping
+    histograms, one from each dataset.
+    """
     output_dir = Path(output_dir)
 
-    for (
-        io_group,
-        io_channel,
-        chip_id,
-        channel_id,
-    ), values in data.items():
+    if data2 is None:
+        # Original single-dataset behavior.
+        for (
+            io_group,
+            io_channel,
+            chip_id,
+            channel_id,
+        ), values in data.items():
 
-        if values.size == 0:
-            continue
+            if values.size == 0:
+                continue
 
-        bins = make_integerish_bins(
-            values,
-            adc_min,
-            adc_max,
-            bin_width,
+            bins = make_integerish_bins(
+                values,
+                adc_min,
+                adc_max,
+                bin_width,
+            )
+
+            folder = (
+                output_dir
+                / f"io_group{io_group}"
+                / f"io_channel{io_channel}"
+                / f"chip{chip_id}"
+            )
+
+            filename = folder / f"channel{channel_id:02d}.png"
+
+            title = (
+                f"io_group={io_group}, "
+                f"io_channel={io_channel}, "
+                f"chip={chip_id}, "
+                f"channel={channel_id}"
+            )
+
+            plot_single_channel_hist(
+                values=values,
+                bins=bins,
+                output_png=filename,
+                title=title,
+                log_y=log_y,
+            )
+
+        return
+
+    # Dual-dataset mode:
+    # Use one common ADC range/binning for both datasets so the histograms
+    # can be compared directly.
+    all_values = [
+        values
+        for values in list(data.values()) + list(data2.values())
+        if values.size
+    ]
+
+    if not all_values:
+        raise ValueError("No selected packets found in either dataset.")
+
+    if adc_min is None:
+        common_min = min(float(np.min(values)) for values in all_values)
+    else:
+        common_min = float(adc_min)
+
+    if adc_max is None:
+        common_max = max(float(np.max(values)) for values in all_values)
+    else:
+        common_max = float(adc_max)
+
+    common_bins = make_integerish_bins(
+        np.array([common_min, common_max], dtype=np.float64),
+        common_min,
+        common_max,
+        bin_width,
+    )
+
+    # Plot every pixel appearing in either dataset.
+    all_keys = sorted(set(data) | set(data2))
+
+    for io_group, io_channel, chip_id, channel_id in all_keys:
+        values1 = data.get(
+            (io_group, io_channel, chip_id, channel_id),
+            np.array([], dtype=np.float64),
         )
+        values2 = data2.get(
+            (io_group, io_channel, chip_id, channel_id),
+            np.array([], dtype=np.float64),
+        )
+
+        if values1.size == 0 and values2.size == 0:
+            continue
 
         folder = (
             output_dir
@@ -287,11 +381,14 @@ def generate_all_channel_histograms(
             f"channel={channel_id}"
         )
 
-        plot_single_channel_hist(
-            values=values,
-            bins=bins,
+        plot_two_channel_hists(
+            values1=values1,
+            values2=values2,
+            bins=common_bins,
             output_png=filename,
             title=title,
+            label1=label1,
+            label2=label2,
             log_y=log_y,
         )
 
@@ -445,6 +542,97 @@ def save_summary_csv(rows: list[dict[str, float | int | str]], output_csv: Path)
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def plot_two_channel_hists(
+    values1: np.ndarray,
+    values2: np.ndarray,
+    bins: np.ndarray,
+    output_png: Path,
+    title: str,
+    label1: str,
+    label2: str,
+    log_y: bool,
+) -> None:
+    """Plot two overlapping per-pixel histograms."""
+    if values1.size == 0 and values2.size == 0:
+        raise ValueError("No packets found for either selected channel.")
+
+    output_png.parent.mkdir(parents=True, exist_ok=True)
+
+    fig, ax = plt.subplots(figsize=(9, 6))
+
+    # Filled + stepped histograms make the overlap easy to see.
+    if values1.size:
+        ax.hist(
+            values1,
+            bins=bins,
+            histtype="stepfilled",
+            alpha=0.35,
+            label=label1,
+        )
+        ax.hist(
+            values1,
+            bins=bins,
+            histtype="step",
+            linewidth=1.2,
+        )
+
+    if values2.size:
+        ax.hist(
+            values2,
+            bins=bins,
+            histtype="stepfilled",
+            alpha=0.35,
+            label=label2,
+        )
+        ax.hist(
+            values2,
+            bins=bins,
+            histtype="step",
+            linewidth=1.2,
+        )
+
+    ax.set_xlabel("ADC dataword")
+    ax.set_ylabel("Packet count")
+    ax.set_title(title)
+    ax.grid(True, alpha=0.3)
+
+    if log_y:
+        ax.set_yscale("log")
+
+    ax.legend(loc="best")
+
+    text_lines = []
+    if values1.size:
+        text_lines.extend([
+            f"{label1}: N={values1.size}",
+            f"  mean={np.mean(values1):.3f}, std={np.std(values1):.3f}",
+        ])
+    else:
+        text_lines.append(f"{label1}: N=0")
+
+    if values2.size:
+        text_lines.extend([
+            f"{label2}: N={values2.size}",
+            f"  mean={np.mean(values2):.3f}, std={np.std(values2):.3f}",
+        ])
+    else:
+        text_lines.append(f"{label2}: N=0")
+
+    ax.text(
+        0.98,
+        0.98,
+        "\n".join(text_lines),
+        transform=ax.transAxes,
+        ha="right",
+        va="top",
+        bbox=dict(boxstyle="round", alpha=0.15),
+    )
+
+    fig.tight_layout()
+    fig.savefig(output_png, dpi=160)
+    plt.close(fig)
 
 
 def plot_single_channel_hist(
@@ -605,22 +793,66 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Plot raw dataword histograms for the entire 2x2."
     )
-    parser.add_argument("--filename", required=True, help="Input HDF5 file containing a packets dataset")
+
+    parser.add_argument(
+        "--filename",
+        required=True,
+        help="First input HDF5 file containing a packets dataset",
+    )
+    parser.add_argument(
+        "--filename2",
+        default=None,
+        help="Optional second HDF5 file. If supplied, each pixel is plotted "
+             "with overlapping histograms from both datasets.",
+    )
+    parser.add_argument(
+        "--label1",
+        default="Dataset 1",
+        help="Legend label for --filename",
+    )
+    parser.add_argument(
+        "--label2",
+        default="Dataset 2",
+        help="Legend label for --filename2",
+    )
     parser.add_argument("--output_dir", default="channel_histograms")
     parser.add_argument("--chunk_size", type=int, default=DEFAULT_CHUNK_SIZE)
-    parser.add_argument("--max_selected_packets", type=int, default=-1, help="Optional cap after packet selection")
-    parser.add_argument("--adc_min", type=float, default=None, help="Lower ADC value for histogram range")
-    parser.add_argument("--adc_max", type=float, default=None, help="Upper ADC value for histogram range")
-    parser.add_argument("--bin_width", type=float, default=1.0, help="Histogram bin width in ADC units")
-    parser.add_argument("--log_y", action="store_true", help="Use log scale for histogram y axes")
-    parser.add_argument("--summary_csv", action="store_true", help="Write one summary CSV per chip.")
+    parser.add_argument(
+        "--max_selected_packets",
+        type=int,
+        default=-1,
+        help="Optional cap after packet selection, applied independently to each dataset",
+    )
+    parser.add_argument(
+        "--adc_min",
+        type=float,
+        default=None,
+        help="Lower ADC value for histogram range",
+    )
+    parser.add_argument(
+        "--adc_max",
+        type=float,
+        default=None,
+        help="Upper ADC value for histogram range",
+    )
+    parser.add_argument(
+        "--bin_width",
+        type=float,
+        default=1.0,
+        help="Histogram bin width in ADC units",
+    )
+    parser.add_argument(
+        "--log_y",
+        action="store_true",
+        help="Use log scale for histogram y axes",
+    )
+    parser.add_argument(
+        "--summary_csv",
+        action="store_true",
+        help="Write one summary CSV per chip for the first dataset",
+    )
+
     args = parser.parse_args()
-
-    #######################################################
-    # Read detector once
-    #######################################################
-
-    print("Reading HDF5 file...")
 
     max_selected = (
         None
@@ -628,63 +860,102 @@ def main() -> None:
         else args.max_selected_packets
     )
 
-    data, livetime = read_all_channel_datawords(
+    # ---------------------------------------------------------------
+    # Read first dataset
+    # ---------------------------------------------------------------
+    print(f"Reading first HDF5 file: {args.filename}")
+
+    data1, livetime1 = read_all_channel_datawords(
         filename=args.filename,
         chunk_size=args.chunk_size,
         max_selected_packets=max_selected,
     )
 
-    print(f"Found {len(data)} active channels.")
+    print(f"Found {len(data1)} active channels in dataset 1.")
 
-    #######################################################
-    # Generate CSV summaries
-    #######################################################
+    # ---------------------------------------------------------------
+    # Read optional second dataset
+    # ---------------------------------------------------------------
+    data2 = None
 
-    if args.summary_csv:
+    if args.filename2 is not None:
+        print(f"Reading second HDF5 file: {args.filename2}")
 
-        print("Writing summary CSV files...")
-
-        generate_chip_summary_csvs(
-            data=data,
-            livetime=livetime,
-            output_dir=args.output_dir,
+        data2, livetime2 = read_all_channel_datawords(
+            filename=args.filename2,
+            chunk_size=args.chunk_size,
+            max_selected_packets=max_selected,
         )
 
-    #######################################################
-    # Generate histograms
-    #######################################################
+        print(f"Found {len(data2)} active channels in dataset 2.")
+    else:
+        livetime2 = None
 
+    # ---------------------------------------------------------------
+    # Generate CSV summaries
+    # ---------------------------------------------------------------
+    if args.summary_csv:
+        print("Writing summary CSV files...")
+
+        if data2 is None:
+            generate_chip_summary_csvs(
+                data=data1,
+                livetime=livetime1,
+                output_dir=args.output_dir,
+            )
+        else:
+            # Keep the original summary behavior for dataset 1 and put the
+            # second dataset's summaries in a separate directory.
+            generate_chip_summary_csvs(
+                data=data1,
+                livetime=livetime1,
+                output_dir=Path(args.output_dir) / "dataset1",
+            )
+            generate_chip_summary_csvs(
+                data=data2,
+                livetime=livetime2,
+                output_dir=Path(args.output_dir) / "dataset2",
+            )
+
+    # ---------------------------------------------------------------
+    # Generate histograms
+    # ---------------------------------------------------------------
     print("Generating histograms...")
 
     generate_all_channel_histograms(
-        data=data,
+        data=data1,
+        data2=data2,
         output_dir=args.output_dir,
         log_y=args.log_y,
         adc_min=args.adc_min,
         adc_max=args.adc_max,
         bin_width=args.bin_width,
+        label1=args.label1,
+        label2=args.label2,
     )
 
-    #######################################################
+    # ---------------------------------------------------------------
     # Final statistics
-    #######################################################
-
-    total_packets = sum(
-        values.size
-        for values in data.values()
-    )
+    # ---------------------------------------------------------------
+    total_packets1 = sum(values.size for values in data1.values())
 
     print()
-
     print("Done.")
-    print(f"Active channels : {len(data)}")
-    print(f"Selected packets: {total_packets}")
+    print(f"Dataset 1 active channels : {len(data1)}")
+    print(f"Dataset 1 selected packets: {total_packets1}")
 
-    if livetime is not None:
-        print(f"Livetime = {livetime}")
+    if livetime1 is not None:
+        print(f"Dataset 1 livetime = {livetime1}")
+
+    if data2 is not None:
+        total_packets2 = sum(values.size for values in data2.values())
+        print(f"Dataset 2 active channels : {len(data2)}")
+        print(f"Dataset 2 selected packets: {total_packets2}")
+
+        if livetime2 is not None:
+            print(f"Dataset 2 livetime = {livetime2}")
 
     print(f"Output directory: {args.output_dir}")
-
 
 if __name__ == "__main__":
     main()
